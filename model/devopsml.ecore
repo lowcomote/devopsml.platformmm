@@ -17,8 +17,23 @@
         eType="#//LanguageCharacteristic" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="languagescope" upperBound="-1"
         eType="#//LanguageScope" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tool" upperBound="-1" eType="#//Tool"
+        eOpposite="#//Tool/language"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Tool"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Tool">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modeling" eType="#//RepresentationKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="generation" eType="#//GenerationKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="analysis" eType="#//AnalysisKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="provisioning" eType="#//ProvisioningKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refinement" eType="#//RefinementKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="language" upperBound="-1"
+        eType="#//Language" eOpposite="#//Language/tool"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DevOpsPhase">
     <eLiterals name="CODE"/>
     <eLiterals name="BUILD" value="1"/>
@@ -70,5 +85,28 @@
   <eClassifiers xsi:type="ecore:EEnum" name="RealizationKind">
     <eLiterals name="INTERNAL_DSL"/>
     <eLiterals name="EXTERNAL_DSL" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RepresentationKind">
+    <eLiterals name="GRAPHICAL"/>
+    <eLiterals name="TEXTUAL" value="1"/>
+    <eLiterals name="IMPOSED_BY_META_LANGUAGE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GenerationKind">
+    <eLiterals name="MODEL_TO_TEXT"/>
+    <eLiterals name="TEXT_TO_MODEL" value="1"/>
+    <eLiterals name="MODEL_TO_MODEL" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AnalysisKind">
+    <eLiterals name="DESIGN_TIME"/>
+    <eLiterals name="RUNTIME" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProvisioningKind">
+    <eLiterals name="DECLARATIVE"/>
+    <eLiterals name="IMPERATIVE" value="1"/>
+    <eLiterals name="MIXTURE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RefinementKind">
+    <eLiterals name="BY_ENRICHMENT"/>
+    <eLiterals name="BY_RESOLUTION" value="1"/>
   </eClassifiers>
 </ecore:EPackage>

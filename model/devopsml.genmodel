@@ -44,6 +44,29 @@
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/INTERNAL_DSL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/EXTERNAL_DSL"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//RepresentationKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/GRAPHICAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/TEXTUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/IMPOSED_BY_META_LANGUAGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//GenerationKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//GenerationKind/MODEL_TO_TEXT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//GenerationKind/TEXT_TO_MODEL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//GenerationKind/MODEL_TO_MODEL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//AnalysisKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AnalysisKind/DESIGN_TIME"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AnalysisKind/RUNTIME"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//ProvisioningKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ProvisioningKind/DECLARATIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ProvisioningKind/IMPERATIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ProvisioningKind/MIXTURE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//RefinementKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RefinementKind/BY_ENRICHMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RefinementKind/BY_RESOLUTION"/>
+    </genEnums>
     <genClasses ecoreClass="devopsml.ecore#//DevOpsML">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/modelingcapability"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/language"/>
@@ -55,8 +78,16 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Language/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/languagecharacteristic"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/languagescope"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/tool"/>
     </genClasses>
-    <genClasses ecoreClass="devopsml.ecore#//Tool"/>
+    <genClasses ecoreClass="devopsml.ecore#//Tool">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/modeling"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/generation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/analysis"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/provisioning"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/refinement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference devopsml.ecore#//Tool/language"/>
+    </genClasses>
     <genClasses ecoreClass="devopsml.ecore#//LanguageCharacteristic">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/abstractSyntax"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/concreteSyntax"/>
