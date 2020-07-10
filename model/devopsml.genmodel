@@ -73,7 +73,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/tool"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//DevOpsML/name"/>
     </genClasses>
-    <genClasses ecoreClass="devopsml.ecore#//ModelingCapability"/>
+    <genClasses ecoreClass="devopsml.ecore#//ModelingCapability">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//ModelingCapability/modelingconcern"/>
+    </genClasses>
     <genClasses ecoreClass="devopsml.ecore#//Language">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Language/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/languagecharacteristic"/>
@@ -99,6 +101,19 @@
     <genClasses ecoreClass="devopsml.ecore#//LanguageScope">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageScope/pragmatics"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageScope/phase"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="devopsml.ecore#//ModelingConcern"/>
+    <genClasses ecoreClass="devopsml.ecore#//SoftwareArchitecture"/>
+    <genClasses ecoreClass="devopsml.ecore#//BehaviorConcern">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//BehaviorConcern/functional"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//BehaviorConcern/nonfunctional"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//Deployment"/>
+    <genClasses ecoreClass="devopsml.ecore#//Functional"/>
+    <genClasses ecoreClass="devopsml.ecore#//NonFunctional"/>
+    <genClasses ecoreClass="devopsml.ecore#//StructuralConcern">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//StructuralConcern/softwarearchitecture"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//StructuralConcern/deployment"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

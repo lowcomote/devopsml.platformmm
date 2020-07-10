@@ -10,7 +10,10 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ModelingCapability"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelingCapability">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingconcern" lowerBound="1"
+        upperBound="-1" eType="#//ModelingConcern" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Language">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="languagecharacteristic"
@@ -108,5 +111,22 @@
   <eClassifiers xsi:type="ecore:EEnum" name="RefinementKind">
     <eLiterals name="BY_ENRICHMENT"/>
     <eLiterals name="BY_RESOLUTION" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelingConcern" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SoftwareArchitecture"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BehaviorConcern" eSuperTypes="#//ModelingConcern">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functional" upperBound="-1"
+        eType="#//Functional" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nonfunctional" upperBound="-1"
+        eType="#//NonFunctional" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Deployment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Functional"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NonFunctional"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StructuralConcern" eSuperTypes="#//ModelingConcern">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="softwarearchitecture" upperBound="-1"
+        eType="#//SoftwareArchitecture" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deployment" upperBound="-1"
+        eType="#//Deployment" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
