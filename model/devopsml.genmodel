@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/at.jku.bise.devopsml.devopsml/src-gen" creationIcons="false"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/at.jku.bise.devopsml.devopsml/src-gen" creationIcons="false"
     editDirectory="/at.jku.bise.devopsml.devopsml.edit/src-gen" editorDirectory="/at.jku.bise.devopsml.devopsml.editor/src-gen"
     modelPluginID="at.jku.bise.devopsml.devopsml" modelName="Devopsml" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0"
@@ -8,5 +9,65 @@
   <foreignModel>devopsml.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Devopsml" basePackage="at.jku.bise.devopsml" disposableProviderFactory="true"
-      ecorePackage="devopsml.ecore#/"/>
+      ecorePackage="devopsml.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//DevOpsPhase">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/CODE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/BUILD"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/TEST"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/RELEASE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/DEPLOY"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/OPERATE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/MONITOR"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsPhase/PLAN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//AsKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/MOF"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/XML%20Schema"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/UML"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/GRAMMAR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//SemanticsKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/OPERATIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/TRANSALTIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/NONE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//CsKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/TEXTUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/GRAPHICAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//TypingKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//TypingKind/LINGUISTIC"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//TypingKind/ONTOLOGICAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//RealizationKind">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/INTERNAL_DSL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/EXTERNAL_DSL"/>
+    </genEnums>
+    <genClasses ecoreClass="devopsml.ecore#//DevOpsML">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/modelingcapability"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/tool"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//DevOpsML/name"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//ModelingCapability"/>
+    <genClasses ecoreClass="devopsml.ecore#//Language">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Language/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/languagecharacteristic"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference devopsml.ecore#//Language/languagescope"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//Tool"/>
+    <genClasses ecoreClass="devopsml.ecore#//LanguageCharacteristic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/abstractSyntax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/concreteSyntax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/semantics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/serialization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/typing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/realization"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//LanguageScope">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageScope/pragmatics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageScope/phase"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>
