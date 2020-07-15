@@ -41,6 +41,7 @@
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/GRAPHICAL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/TEXTUAL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/IMPOSED_BY_META_LANGUAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RepresentationKind/MIXED"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//GenerationKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//GenerationKind/MODEL_TO_TEXT"/>
@@ -75,10 +76,29 @@
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ScKind/PHYSICAL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ScKind/SOCIETAL"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//DevOpsToolCategory">
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/AIOPS%2FANALYTICS"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ARTIFACT%2FPACKAGEMANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CLOUD"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/COLLABORATION"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION%20AUTOMATION"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONTAINERS"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS%20INTEGRATION"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/DATABASE%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/DEPLOYMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE%20AGILE%20PLANNING"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ISSUE%20TRAKING%20%2F%20ITSM"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/RELEASE%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SECURITY"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SERVERLESS%20%2F%20PAAS"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/TESTING"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/VALUES%20STREAM%20MANAGEMENT"/>
+    </genEnums>
     <genClasses ecoreClass="devopsml.ecore#//DevOpsML">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/modelingcapability"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/languages"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/tool"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/tools"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//DevOpsML/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//DevOpsML/public"/>
     </genClasses>
@@ -94,12 +114,13 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Language/phase"/>
     </genClasses>
     <genClasses ecoreClass="devopsml.ecore#//Tool">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/modeling"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/generation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/analysis"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/provisioning"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/refinement"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference devopsml.ecore#//Tool/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//Tool/devopsprofiles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//Tool/pragmatics"/>
     </genClasses>
     <genClasses ecoreClass="devopsml.ecore#//LanguageCharacteristic">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/abstractSyntax"/>
@@ -118,6 +139,13 @@
     </genClasses>
     <genClasses ecoreClass="devopsml.ecore#//StructuralConcern">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//StructuralConcern/kind"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//DevOpsProfile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//DevOpsProfile/category"/>
+    </genClasses>
+    <genClasses ecoreClass="devopsml.ecore#//MdeProfile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//MdeProfile/modeling"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//MdeProfile/generation"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
