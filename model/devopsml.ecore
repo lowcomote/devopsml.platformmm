@@ -8,11 +8,14 @@
         eType="#//Language" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tool" upperBound="-1" eType="#//Tool"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="public" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ModelingCapability">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingconcern" lowerBound="1"
-        upperBound="-1" eType="#//ModelingConcern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelingconcerns" upperBound="-1"
+        eType="#//ModelingConcern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Language">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -103,21 +106,34 @@
     <eLiterals name="BY_ENRICHMENT"/>
     <eLiterals name="BY_RESOLUTION" value="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ModelingConcern" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SoftwareArchitecture"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BehaviorConcern" eSuperTypes="#//ModelingConcern">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="functional" upperBound="-1"
-        eType="#//Functional" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="nonfunctional" upperBound="-1"
-        eType="#//NonFunctional" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelingConcern" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pov" lowerBound="1" eType="#//PointOfView"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Deployment"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Functional"/>
-  <eClassifiers xsi:type="ecore:EClass" name="NonFunctional"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BehaviorConcern" eSuperTypes="#//ModelingConcern">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" lowerBound="1" eType="#//BcKind"
+        defaultValueLiteral=""/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StructuralConcern" eSuperTypes="#//ModelingConcern">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="softwarearchitecture" upperBound="-1"
-        eType="#//SoftwareArchitecture" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="deployment" upperBound="-1"
-        eType="#//Deployment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" lowerBound="1" eType="#//ScKind"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PointOfView">
+    <eLiterals name="PROCESS"/>
+    <eLiterals name="PRODUCT" value="1"/>
+    <eLiterals name="RESOURCE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BcKind">
+    <eLiterals name="FUNCTIONAL"/>
+    <eLiterals name="NON-FUNCTIONAL" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ScKind">
+    <eLiterals name="SOFTWARE"/>
+    <eLiterals name="HARDWARE" value="1"/>
+    <eLiterals name="PHYSICAL" value="2"/>
+    <eLiterals name="SOCIETAL" value="3"/>
   </eClassifiers>
 </ecore:EPackage>
