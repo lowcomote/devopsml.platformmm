@@ -21,27 +21,23 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="languagecharacteristic"
         eType="#//LanguageCharacteristic" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tool" upperBound="-1" eType="#//Tool"
-        eOpposite="#//Tool/language"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
+        eType="#//Tool" eOpposite="#//Tool/languages"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pragmatics" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phase" upperBound="-1"
         eType="#//DevOpsPhase" defaultValueLiteral=""/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Tool">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="analysis" eType="#//AnalysisKind"
-        defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="provisioning" eType="#//ProvisioningKind"
-        defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refinement" eType="#//RefinementKind"
-        defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="language" upperBound="-1"
-        eType="#//Language" eOpposite="#//Language/tool"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="languages" upperBound="-1"
+        eType="#//Language" eOpposite="#//Language/tools"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="devopsprofiles" upperBound="-1"
         eType="#//DevOpsProfile" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pragmatics" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mdeprofiles" upperBound="-1"
+        eType="#//MdeProfile" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DevOpsPhase">
     <eLiterals name="CODE"/>
@@ -91,19 +87,6 @@
     <eLiterals name="MODEL_TO_TEXT"/>
     <eLiterals name="TEXT_TO_MODEL" value="1"/>
     <eLiterals name="MODEL_TO_MODEL" value="2"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="AnalysisKind">
-    <eLiterals name="DESIGN_TIME"/>
-    <eLiterals name="RUNTIME" value="1"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="ProvisioningKind">
-    <eLiterals name="DECLARATIVE"/>
-    <eLiterals name="IMPERATIVE" value="1"/>
-    <eLiterals name="MIXTURE" value="2"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="RefinementKind">
-    <eLiterals name="BY_ENRICHMENT"/>
-    <eLiterals name="BY_RESOLUTION" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ModelingConcern" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
