@@ -22,7 +22,7 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//AsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/MOF"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/XML%20SCHEMA"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/XML_SCHEMA"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/GRAMMAR"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//SemanticsKind">
@@ -55,7 +55,7 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//BcKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//BcKind/FUNCTIONAL"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//BcKind/NON-FUNCTIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//BcKind/NON_FUNCTIONAL"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//ScKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ScKind/SOFTWARE"/>
@@ -64,23 +64,23 @@
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//ScKind/SOCIETAL"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//DevOpsToolCategory">
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/AIOPS%2FANALYTICS"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ARTIFACT%2FPACKAGEMANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/AIOPS_ANALYTICS"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ARTIFACT_PACKAGEMANAGEMENT"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CLOUD"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/COLLABORATION"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION%20AUTOMATION"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION_AUTOMATION"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONTAINERS"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS%20INTEGRATION"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/DATABASE%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS_INTEGRATION"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/DATABASE_MANAGEMENT"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/DEPLOYMENT"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE%20AGILE%20PLANNING"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ISSUE%20TRAKING%20%2F%20ITSM"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/RELEASE%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE_AGILE_PLANNING"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/ISSUE_TRAKING_ITSM"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/RELEASE_MANAGEMENT"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SECURITY"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SERVERLESS%20%2F%20PAAS"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SERVERLESS_PAAS"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL_MANAGEMENT"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/TESTING"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/VALUES%20STREAM%20MANAGEMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//DevOpsToolCategory/VALUES_STREAM_MANAGEMENT"/>
     </genEnums>
     <genClasses ecoreClass="devopsml.ecore#//DevOpsML">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference devopsml.ecore#//DevOpsML/modelingcapability"/>

@@ -62,7 +62,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="AsKind">
     <eLiterals name="MOF"/>
-    <eLiterals name="XML SCHEMA" value="1" literal="XML SCHEMA"/>
+    <eLiterals name="XML_SCHEMA" value="1" literal="XML_CHEMA"/>
     <eLiterals name="GRAMMAR" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SemanticsKind">
@@ -110,7 +110,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BcKind">
     <eLiterals name="FUNCTIONAL"/>
-    <eLiterals name="NON-FUNCTIONAL" value="1"/>
+    <eLiterals name="NON_FUNCTIONAL" value="1" literal="NON_FUNCTIONAL"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ScKind">
     <eLiterals name="SOFTWARE"/>
@@ -119,23 +119,23 @@
     <eLiterals name="SOCIETAL" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DevOpsToolCategory">
-    <eLiterals name="AIOPS/ANALYTICS"/>
-    <eLiterals name="ARTIFACT/PACKAGEMANAGEMENT" value="1"/>
+    <eLiterals name="AIOPS_ANALYTICS" literal="AIOPS_ANALYTICS"/>
+    <eLiterals name="ARTIFACT_PACKAGEMANAGEMENT" value="1" literal="ARTIFACT_PACKAGEMANAGEMENT"/>
     <eLiterals name="CLOUD" value="2"/>
     <eLiterals name="COLLABORATION" value="3"/>
-    <eLiterals name="CONFIGURATION AUTOMATION" value="4" literal="CONFIGURATION AUTOMATION"/>
+    <eLiterals name="CONFIGURATION_AUTOMATION" value="4" literal="CONFIGURATION_AUTOMATION"/>
     <eLiterals name="CONTAINERS" value="5"/>
-    <eLiterals name="CONTINUOUS INTEGRATION" value="6"/>
-    <eLiterals name="DATABASE MANAGEMENT" value="7"/>
+    <eLiterals name="CONTINUOUS_INTEGRATION" value="6" literal="CONTINUOUS_INTEGRATION"/>
+    <eLiterals name="DATABASE_MANAGEMENT" value="7" literal="DATABASE_MANAGEMENT"/>
     <eLiterals name="DEPLOYMENT" value="8"/>
-    <eLiterals name="ENTERPRISE AGILE PLANNING" value="9"/>
-    <eLiterals name="ISSUE TRAKING / ITSM" value="10"/>
-    <eLiterals name="RELEASE MANAGEMENT" value="11"/>
+    <eLiterals name="ENTERPRISE_AGILE_PLANNING" value="9" literal="ENTERPRISE_AGILE_PLANNING"/>
+    <eLiterals name="ISSUE_TRAKING_ITSM" value="10" literal="ISSUE_TRAKING_ITSM"/>
+    <eLiterals name="RELEASE_MANAGEMENT" value="11" literal="RELEASE_MANAGEMENT"/>
     <eLiterals name="SECURITY" value="12"/>
-    <eLiterals name="SERVERLESS / PAAS" value="13"/>
-    <eLiterals name="SOURCECONTROL MANAGEMENT" value="14"/>
+    <eLiterals name="SERVERLESS_PAAS" value="13" literal="SERVERLESS_PAAS"/>
+    <eLiterals name="SOURCECONTROL_MANAGEMENT" value="14" literal="SOURCECONTROL_MANAGEMENT"/>
     <eLiterals name="TESTING" value="15"/>
-    <eLiterals name="VALUES STREAM MANAGEMENT" value="16"/>
+    <eLiterals name="VALUES_STREAM_MANAGEMENT" value="16" literal="VALUES_STREAM_MANAGEMENT"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DevOpsProfile">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//DevOpsToolCategory"

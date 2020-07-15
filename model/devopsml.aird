@@ -960,9 +960,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_AeCGAMKnEeqgV-U6hOqyHA" name="XML SCHEMA" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//AsKind/XML%20SCHEMA"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//AsKind/XML%20SCHEMA"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_AeCGAMKnEeqgV-U6hOqyHA" name="XML_SCHEMA" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//AsKind/XML_SCHEMA"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//AsKind/XML_SCHEMA"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_AeCGAcKnEeqgV-U6hOqyHA" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1320,9 +1320,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_e9j1IMZ5EeqEJ9dOWC4fUw" name="NON-FUNCTIONAL" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//BcKind/NON-FUNCTIONAL"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//BcKind/NON-FUNCTIONAL"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_e9j1IMZ5EeqEJ9dOWC4fUw" name="NON_FUNCTIONAL" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//BcKind/NON_FUNCTIONAL"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//BcKind/NON_FUNCTIONAL"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_e9kcMMZ5EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1382,17 +1382,17 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_gAd8QMZ8EeqEJ9dOWC4fUw" name="AIOPS/ANALYTICS" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/AIOPS%2FANALYTICS"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/AIOPS%2FANALYTICS"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_gAd8QMZ8EeqEJ9dOWC4fUw" name="AIOPS_ANALYTICS" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/AIOPS_ANALYTICS"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/AIOPS_ANALYTICS"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_gAejUMZ8EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_mJE5QMZ8EeqEJ9dOWC4fUw" name="ARTIFACT/PACKAGEMANAGEMENT" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ARTIFACT%2FPACKAGEMANAGEMENT"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ARTIFACT%2FPACKAGEMANAGEMENT"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_mJE5QMZ8EeqEJ9dOWC4fUw" name="ARTIFACT_PACKAGEMANAGEMENT" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ARTIFACT_PACKAGEMANAGEMENT"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ARTIFACT_PACKAGEMANAGEMENT"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_mJE5QcZ8EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1414,9 +1414,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_uYRIQMZ8EeqEJ9dOWC4fUw" name="CONFIGURATION AUTOMATION" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION%20AUTOMATION"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION%20AUTOMATION"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_uYRIQMZ8EeqEJ9dOWC4fUw" name="CONFIGURATION_AUTOMATION" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION_AUTOMATION"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONFIGURATION_AUTOMATION"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_uYRIQcZ8EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1430,17 +1430,17 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6ccEwMZ8EeqEJ9dOWC4fUw" name="CONTINUOUS INTEGRATION" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS%20INTEGRATION"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS%20INTEGRATION"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6ccEwMZ8EeqEJ9dOWC4fUw" name="CONTINUOUS_INTEGRATION" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS_INTEGRATION"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/CONTINUOUS_INTEGRATION"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_6ccEwcZ8EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_H6ovQMZ9EeqEJ9dOWC4fUw" name="DATABASE MANAGEMENT" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/DATABASE%20MANAGEMENT"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/DATABASE%20MANAGEMENT"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_H6ovQMZ9EeqEJ9dOWC4fUw" name="DATABASE_MANAGEMENT" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/DATABASE_MANAGEMENT"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/DATABASE_MANAGEMENT"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_H6ovQcZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1454,25 +1454,25 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_KzkrQMZ9EeqEJ9dOWC4fUw" name="ENTERPRISE AGILE PLANNING" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE%20AGILE%20PLANNING"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE%20AGILE%20PLANNING"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_KzkrQMZ9EeqEJ9dOWC4fUw" name="ENTERPRISE_AGILE_PLANNING" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE_AGILE_PLANNING"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ENTERPRISE_AGILE_PLANNING"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_KzkrQcZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_NU70wMZ9EeqEJ9dOWC4fUw" name="ISSUE TRAKING / ITSM" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ISSUE%20TRAKING%20%2F%20ITSM"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ISSUE%20TRAKING%20%2F%20ITSM"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_NU70wMZ9EeqEJ9dOWC4fUw" name="ISSUE_TRAKING_ITSM" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ISSUE_TRAKING_ITSM"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/ISSUE_TRAKING_ITSM"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_NU8b0MZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_QRwyQMZ9EeqEJ9dOWC4fUw" name="RELEASE MANAGEMENT" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/RELEASE%20MANAGEMENT"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/RELEASE%20MANAGEMENT"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_QRwyQMZ9EeqEJ9dOWC4fUw" name="RELEASE_MANAGEMENT" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/RELEASE_MANAGEMENT"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/RELEASE_MANAGEMENT"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_QRxZUMZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1486,17 +1486,17 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UNJpwMZ9EeqEJ9dOWC4fUw" name="SERVERLESS / PAAS" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SERVERLESS%20%2F%20PAAS"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SERVERLESS%20%2F%20PAAS"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UNJpwMZ9EeqEJ9dOWC4fUw" name="SERVERLESS_PAAS" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SERVERLESS_PAAS"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SERVERLESS_PAAS"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UNJpwcZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_WxLswMZ9EeqEJ9dOWC4fUw" name="SOURCECONTROL MANAGEMENT" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL%20MANAGEMENT"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL%20MANAGEMENT"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_WxLswMZ9EeqEJ9dOWC4fUw" name="SOURCECONTROL_MANAGEMENT" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL_MANAGEMENT"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/SOURCECONTROL_MANAGEMENT"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_WxLswcZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
@@ -1510,9 +1510,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ZjkU0MZ9EeqEJ9dOWC4fUw" name="VALUES STREAM MANAGEMENT" tooltipText="">
-        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/VALUES%20STREAM%20MANAGEMENT"/>
-        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/VALUES%20STREAM%20MANAGEMENT"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ZjkU0MZ9EeqEJ9dOWC4fUw" name="VALUES_STREAM_MANAGEMENT" tooltipText="">
+        <target xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/VALUES_STREAM_MANAGEMENT"/>
+        <semanticElements xmi:type="ecore:EEnumLiteral" href="devopsml.ecore#//DevOpsToolCategory/VALUES_STREAM_MANAGEMENT"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_ZjkU0cZ9EeqEJ9dOWC4fUw" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EEnum']/@subNodeMappings[name='EC%20EEnumLiteral']/@style"/>
         </ownedStyle>
