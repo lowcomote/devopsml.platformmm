@@ -36,10 +36,6 @@
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/TEXTUAL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/GRAPHICAL"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//TypingKind">
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//TypingKind/LINGUISTIC"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//TypingKind/ONTOLOGICAL"/>
-    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//RealizationKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/INTERNAL_DSL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//RealizationKind/EXTERNAL_DSL"/>
@@ -96,7 +92,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/concreteSyntax"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/semantics"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/serialization"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/typing"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute devopsml.ecore#//LanguageCharacteristic/realization"/>
     </genClasses>
     <genClasses image="false" ecoreClass="devopsml.ecore#//ModelingConcern"/>

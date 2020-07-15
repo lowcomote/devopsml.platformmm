@@ -50,15 +50,13 @@
     <eLiterals name="PLAN" value="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LanguageCharacteristic">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractSyntax" lowerBound="1"
-        eType="#//AsKind" defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="concreteSyntax" lowerBound="1"
-        upperBound="-1" eType="#//CsKind"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="semantics" lowerBound="1"
-        eType="#//SemanticsKind" defaultValueLiteral=""/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typing" eType="#//TypingKind"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractSyntax" eType="#//AsKind"
         defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="concreteSyntax" eType="#//CsKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="semantics" eType="#//SemanticsKind"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="realization" eType="#//RealizationKind"
         defaultValueLiteral=""/>
   </eClassifiers>
@@ -77,10 +75,6 @@
   <eClassifiers xsi:type="ecore:EEnum" name="CsKind">
     <eLiterals name="TEXTUAL"/>
     <eLiterals name="GRAPHICAL" value="1"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="TypingKind">
-    <eLiterals name="LINGUISTIC"/>
-    <eLiterals name="ONTOLOGICAL" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="RealizationKind">
     <eLiterals name="INTERNAL_DSL"/>
