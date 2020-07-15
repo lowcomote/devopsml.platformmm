@@ -4,7 +4,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="DevOpsML">
     <eStructuralFeatures xsi:type="ecore:EReference" name="modelingcapability" upperBound="-1"
         eType="#//ModelingCapability" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="language" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="languages" upperBound="-1"
         eType="#//Language" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tool" upperBound="-1" eType="#//Tool"
         containment="true"/>
@@ -15,13 +15,15 @@
         upperBound="-1" eType="#//ModelingConcern" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Language">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="languagecharacteristic"
         eType="#//LanguageCharacteristic" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="languagescope" upperBound="-1"
-        eType="#//LanguageScope" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tool" upperBound="-1" eType="#//Tool"
         eOpposite="#//Tool/language"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pragmatics" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phase" upperBound="-1"
+        eType="#//DevOpsPhase" defaultValueLiteral=""/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Tool">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="modeling" eType="#//RepresentationKind"
@@ -79,11 +81,6 @@
   <eClassifiers xsi:type="ecore:EEnum" name="TypingKind">
     <eLiterals name="LINGUISTIC"/>
     <eLiterals name="ONTOLOGICAL" value="1"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LanguageScope">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pragmatics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phase" eType="#//DevOpsPhase"
-        defaultValueLiteral=""/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="RealizationKind">
     <eLiterals name="INTERNAL_DSL"/>
