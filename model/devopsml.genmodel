@@ -27,7 +27,7 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//SemanticsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/OPERATIONAL"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/TRANSALTIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/TRANSLATIONAL"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//CsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/TEXTUAL"/>
