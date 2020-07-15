@@ -65,15 +65,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="AsKind">
     <eLiterals name="MOF"/>
-    <eLiterals name="XML Schema" value="1"/>
-    <eLiterals name="UML" value="2"/>
-    <eLiterals name="NONE" value="3"/>
+    <eLiterals name="XML SCHEMA" value="1" literal="XML SCHEMA"/>
     <eLiterals name="GRAMMAR" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SemanticsKind">
     <eLiterals name="OPERATIONAL"/>
     <eLiterals name="TRANSALTIONAL" value="1"/>
-    <eLiterals name="NONE" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CsKind">
     <eLiterals name="TEXTUAL"/>

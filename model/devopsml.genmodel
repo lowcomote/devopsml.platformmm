@@ -22,15 +22,12 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//AsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/MOF"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/XML%20Schema"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/UML"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/XML%20SCHEMA"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//AsKind/GRAMMAR"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//SemanticsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/OPERATIONAL"/>
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/TRANSALTIONAL"/>
-      <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//SemanticsKind/NONE"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="devopsml.ecore#//CsKind">
       <genEnumLiterals ecoreEnumLiteral="devopsml.ecore#//CsKind/TEXTUAL"/>
