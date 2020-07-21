@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:PlatformMM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_xLolYMsqEeqy961xXh5Xnw" name="My first Platform">
+  <languages xmi:id="_CuAP8MsrEeqy961xXh5Xnw" name="Git CLI" pragmatics="branch, merge, tag management" tools="_vKuBEMsrEeqy961xXh5Xnw">
+    <languagecharacteristics xmi:id="_DgMscMssEeqy961xXh5Xnw" abstractSyntax="GRAMMAR" semantics="OPERATIONAL"/>
+    <phase>CODE</phase>
+    <phase>DEPLOY</phase>
+    <phase>RELEASE</phase>
+  </languages>
+  <languages xmi:id="_cBbcAMsrEeqy961xXh5Xnw" name="EGit" pragmatics="Git integration for Eclipse" tools="_vKuBEMsrEeqy961xXh5Xnw">
+    <languagecharacteristics xmi:id="_dAl9gMssEeqy961xXh5Xnw" abstractSyntax="GRAMMAR" concreteSyntax="GRAPHICAL" realization="EXTERNAL_DSL"/>
+    <phase>CODE</phase>
+    <phase>DEPLOY</phase>
+    <phase>RELEASE</phase>
+  </languages>
+  <languages xmi:id="_hhOFgMsrEeqy961xXh5Xnw" name="POM" pragmatics="Maven Project Object Model" tools="__UzDAMsrEeqy961xXh5Xnw">
+    <languagecharacteristics xmi:id="_k65hoMssEeqy961xXh5Xnw" abstractSyntax="XML_CHEMA" semantics="OPERATIONAL"/>
+    <phase>BUILD</phase>
+    <phase>TEST</phase>
+    <phase>DEPLOY</phase>
+  </languages>
+  <tools xmi:id="_vKuBEMsrEeqy961xXh5Xnw" languages="_CuAP8MsrEeqy961xXh5Xnw _cBbcAMsrEeqy961xXh5Xnw" name="Git" pragmatics="Collaborative develop">
+    <devopsprofiles xmi:id="_tUXuAMssEeqy961xXh5Xnw" category="SOURCECONTROL_MANAGEMENT"/>
+    <devopsprofiles xmi:id="_0X9skMssEeqy961xXh5Xnw"/>
+    <devopsprofiles xmi:id="_2DmvAMssEeqy961xXh5Xnw" category="CONTINUOUS_INTEGRATION"/>
+  </tools>
+  <tools xmi:id="_4XZMAMsrEeqy961xXh5Xnw" name="Jenkins" pragmatics="jobs automation">
+    <devopsprofiles xmi:id="_VMWIoMstEeqy961xXh5Xnw"/>
+    <devopsprofiles xmi:id="_WPxUgMstEeqy961xXh5Xnw" category="CONTINUOUS_INTEGRATION"/>
+    <devopsprofiles xmi:id="_Z2zFkMstEeqy961xXh5Xnw" category="RELEASE_MANAGEMENT"/>
+  </tools>
+  <tools xmi:id="_8PhUIMsrEeqy961xXh5Xnw" name="Nexus" pragmatics="Artifact Repository">
+    <devopsprofiles xmi:id="_ck1ZIMstEeqy961xXh5Xnw" category="ARTIFACT_PACKAGEMANAGEMENT"/>
+    <devopsprofiles xmi:id="_fOXAIMstEeqy961xXh5Xnw" category="DEPLOYMENT"/>
+  </tools>
+  <tools xmi:id="__UzDAMsrEeqy961xXh5Xnw" languages="_hhOFgMsrEeqy961xXh5Xnw" name="Maven" pragmatics="Building"/>
+</platformmm:PlatformMM>
