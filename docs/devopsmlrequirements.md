@@ -6,7 +6,7 @@
 |RG2|Support for model integration|Requirement satisfied by the integration mechanism provided by LinkingMM and ModeLink|
 |RG3|Support for tool integration|LinkingMM allows to model the integration between all tools specified in the instance of PlatformMM|
 |RG4|Support for customization|Engineers can model their platform according to their needs choosing languages, tools and concerns known by PlatformMM. They can also assemble a new workflow using existing elements in Spem catalogs|
-|RG5|Support for different viewpoints and perspectives|Performing model transformations from a linking model, it is possible to generate complex and integrated views for different viewpoints and perspectives|
+|RG5|Support for different viewpoints and perspectives|Future Work: performing model transformations from a linking model, it is possible to generate complex and integrated views for different viewpoints and perspectives|
 
 ## Description Requirements 
 
