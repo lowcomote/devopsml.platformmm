@@ -13,7 +13,7 @@
 |Code|Description|DevOpsML match|
 |----|-----------|--------------|
 |RD1|Use of appropriate modeling techniques|Engineers can choose their languages and include them into PlatformMM |
-|RD2|Description of the flow|DevOpsML foresees the use of one or more modeling technique, without prescribing a concrete one. Every  MDE workflow metamodel is perfectly pluggable|
+|RD2|Description of the flow|DevOpsML foresees the use of one or more modeling technique, without prescribing a concrete one. Every  MDE workflow metamodel is perfectly pluggable. An experiment with SPEM has already been done.|
 |RD3|Specification of real-time properties|Future Work|
 |RG4|Specification of people (roles), methods and tools|SPEM allows these specifications|
 
