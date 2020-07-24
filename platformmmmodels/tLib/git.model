@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:Tool xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_8Z5UIM3IEeqBuIcN73M34w" name="Git" pragmatics="Collaborative develop">
+  <phases>CODE</phases>
+  <phases>DEPLOY</phases>
+  <phases>RELEASE</phases>
+  <phases>TEST</phases>
+</platformmm:Tool>
