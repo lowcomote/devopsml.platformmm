@@ -1,3 +1,7 @@
+In this table we show the DevOps modeling framework requirements, from https://www.researchgate.net/publication/338672360_Towards_Modeling_Framework_for_DevOps_Requirements_Derived_from_Industry_Use_Case
+and their matching against DevOpsML solution
+
+
 ## General Requirements 
 
 |Code|Description|DevOpsML match|
