@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:Tool xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_PKDAcM3JEeqBuIcN73M34w" name="Maven" pragmatics="Building">
+  <phases>BUILD</phases>
+</platformmm:Tool>

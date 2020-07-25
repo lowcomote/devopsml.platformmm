@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:Language xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_GXMfMM3TEeqBuIcN73M34w" name="Pom" pragmatics="Maven Project Object Model">
+  <phase>BUILD</phase>
+  <phase>DEPLOY</phase>
+  <phase>TEST</phase>
+  <phase>RELEASE</phase>
+</platformmm:Language>

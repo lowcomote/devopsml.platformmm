@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:Language xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_2MS94M3SEeqBuIcN73M34w" name="NexusUI" pragmatics="web for interacting with Nexus Repository Manager">
+  <phase>DEPLOY</phase>
+  <phase>RELEASE</phase>
+  <languagecharacteristics xmi:id="_ARDAUM3TEeqBuIcN73M34w" abstractSyntax="GRAMMAR" concreteSyntax="GRAPHICAL" semantics="OPERATIONAL"/>
+</platformmm:Language>

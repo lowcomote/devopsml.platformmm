@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:CapabilitiesAndConcerns xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_gHP84M3TEeqBuIcN73M34w">
+  <capabilities xmi:id="_rwAvwM3TEeqBuIcN73M34w" name="automating software development" concerns="_j5desM3dEeqBuIcN73M34w _sckvQM3dEeqBuIcN73M34w _AJtLwM3fEeqBuIcN73M34w">
+    <phases>BUILD</phases>
+    <phases>CODE</phases>
+    <phases>DEPLOY</phases>
+    <phases>MONITOR</phases>
+    <phases>OPERATE</phases>
+    <phases>PLAN</phases>
+    <phases>RELEASE</phases>
+    <phases>TEST</phases>
+  </capabilities>
+  <capabilities xmi:id="_dfc-wM3UEeqBuIcN73M34w" name="managing product sources" concerns="_1zyWQM3dEeqBuIcN73M34w _1PGp8M3fEeqBuIcN73M34w">
+    <phases>CODE</phases>
+    <phases>RELEASE</phases>
+  </capabilities>
+  <capabilities xmi:id="_KqeGsM3dEeqBuIcN73M34w" name="managing build lifecycle" concerns="_825-QM3eEeqBuIcN73M34w _n308QM3eEeqBuIcN73M34w _1RDnMM3eEeqBuIcN73M34w">
+    <phases>BUILD</phases>
+  </capabilities>
+  <capabilities xmi:id="_QtbusM3dEeqBuIcN73M34w" name="managing libraries" concerns="_AJtLwM3fEeqBuIcN73M34w _DidQQM3fEeqBuIcN73M34w">
+    <phases>BUILD</phases>
+    <phases>DEPLOY</phases>
+    <phases>RELEASE</phases>
+  </capabilities>
+  <capabilities xmi:id="_XtTD0M3dEeqBuIcN73M34w" name="Project site generation" concerns="_n308QM3eEeqBuIcN73M34w">
+    <phases>RELEASE</phases>
+  </capabilities>
+  <capabilities xmi:id="_c23lsM3dEeqBuIcN73M34w" name="Report generation" concerns="_1RDnMM3eEeqBuIcN73M34w">
+    <phases>RELEASE</phases>
+  </capabilities>
+  <concerns xmi:id="_j5desM3dEeqBuIcN73M34w" name="Continuous integration" description="Continuous integration" capabilities="_rwAvwM3TEeqBuIcN73M34w">
+    <phases>BUILD</phases>
+  </concerns>
+  <concerns xmi:id="_sckvQM3dEeqBuIcN73M34w" name="Continuous delivery" description="Continuous delivery" capabilities="_rwAvwM3TEeqBuIcN73M34w">
+    <phases>RELEASE</phases>
+  </concerns>
+  <concerns xmi:id="_c0f8QM3fEeqBuIcN73M34w" name="Continuous deployment" description="Continuous deployment">
+    <phases>DEPLOY</phases>
+  </concerns>
+  <concerns xmi:id="_1PGp8M3fEeqBuIcN73M34w" name="Track history" description="Track history" capabilities="_dfc-wM3UEeqBuIcN73M34w">
+    <phases>CODE</phases>
+    <phases>RELEASE</phases>
+  </concerns>
+  <concerns xmi:id="_1zyWQM3dEeqBuIcN73M34w" name="Branching and Merging" description="Branching and Merging" capabilities="_dfc-wM3UEeqBuIcN73M34w">
+    <phases>CODE</phases>
+    <phases>RELEASE</phases>
+  </concerns>
+  <concerns xmi:id="_n308QM3eEeqBuIcN73M34w" name="Project information easy access" description="Project information easy access" ppr="RESOURCE" capabilities="_KqeGsM3dEeqBuIcN73M34w _XtTD0M3dEeqBuIcN73M34w">
+    <phases>DEPLOY</phases>
+    <phases>OPERATE</phases>
+    <phases>MONITOR</phases>
+  </concerns>
+  <concerns xmi:id="_1RDnMM3eEeqBuIcN73M34w" name="Updated project report availability" description="Updated project report availability" ppr="RESOURCE" capabilities="_KqeGsM3dEeqBuIcN73M34w _c23lsM3dEeqBuIcN73M34w">
+    <phases>DEPLOY</phases>
+    <phases>MONITOR</phases>
+    <phases>OPERATE</phases>
+  </concerns>
+  <concerns xmi:id="_825-QM3eEeqBuIcN73M34w" name="Build flow control" description="Build flow control" capabilities="_KqeGsM3dEeqBuIcN73M34w">
+    <phases>BUILD</phases>
+  </concerns>
+  <concerns xmi:id="_AJtLwM3fEeqBuIcN73M34w" name="Easy distributed deployment" description="Easy distributed deployment" capabilities="_rwAvwM3TEeqBuIcN73M34w _QtbusM3dEeqBuIcN73M34w">
+    <phases>DEPLOY</phases>
+  </concerns>
+  <concerns xmi:id="_DidQQM3fEeqBuIcN73M34w" name="Deliverable storage" description="Deliverable storage" capabilities="_QtbusM3dEeqBuIcN73M34w">
+    <phases>RELEASE</phases>
+  </concerns>
+</platformmm:CapabilitiesAndConcerns>
