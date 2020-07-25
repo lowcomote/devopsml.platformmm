@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="platformmm" nsURI="http://www.example.org/platformmm" nsPrefix="platformmm">
   <eClassifiers xsi:type="ecore:EClass" name="Platform">
     <eStructuralFeatures xsi:type="ecore:EReference" name="capabilitiesAndConcerns"
-        upperBound="-1" eType="#//CapabilitiesAndConcerns"/>
+        eType="#//CapabilitiesAndConcerns"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="languages" upperBound="-1"
         eType="#//Language"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
