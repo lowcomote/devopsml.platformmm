@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:CapabilitiesAndConcerns xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_Lbei0NGAEeqHNZ6f6L9diA">
+  <capabilities xmi:id="_czE14NGCEeqHNZ6f6L9diA" name="AutomatingSoftwareDevelopment" description="automate the software development in different aspects andfor many purposes" status="PROVIDED" concerns="_odTL4NGDEeqHNZ6f6L9diA _DqR6kNGEEeqHNZ6f6L9diA _SzD3kNGEEeqHNZ6f6L9diA">
+    <tools href="../tiLib/myPlatTI.model#_mPqhkNGBEeqHNZ6f6L9diA"/>
+  </capabilities>
+  <capabilities xmi:id="_N-PagNGAEeqHNZ6f6L9diA" name="ManagingProuctSources" description="manage source code" status="PROVIDED" concerns="_0nIg8NGCEeqHNZ6f6L9diA _Rzo3YNGDEeqHNZ6f6L9diA">
+    <tools href="../tiLib/myPlatTI.model#_LRGpYNGBEeqHNZ6f6L9diA"/>
+  </capabilities>
+  <concerns xmi:id="_odTL4NGDEeqHNZ6f6L9diA" name="CI" description="Continuous Integration" status="PROVIDED" capabilities="_czE14NGCEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>BUILD</devOpsPhases>
+  </concerns>
+  <concerns xmi:id="_DqR6kNGEEeqHNZ6f6L9diA" name="CR" description="Continuous Release" status="PROVIDED" capabilities="_czE14NGCEeqHNZ6f6L9diA">
+    <devOpsPhases>RELEASE</devOpsPhases>
+  </concerns>
+  <concerns xmi:id="_0nIg8NGCEeqHNZ6f6L9diA" name="TrackHistory" description="versioning all files across all the development process" status="PROVIDED" capabilities="_N-PagNGAEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+  </concerns>
+  <concerns xmi:id="_Rzo3YNGDEeqHNZ6f6L9diA" name="BranchingAndMerging" description="branching, merging and tagging policies" status="PROVIDED" capabilities="_N-PagNGAEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+  </concerns>
+  <concerns xmi:id="_SzD3kNGEEeqHNZ6f6L9diA" name="CD" description="Continuous Deploy" status="PROVIDED" capabilities="_czE14NGCEeqHNZ6f6L9diA">
+    <devOpsPhases>DEPLOY</devOpsPhases>
+  </concerns>
+</platformmm:CapabilitiesAndConcerns>

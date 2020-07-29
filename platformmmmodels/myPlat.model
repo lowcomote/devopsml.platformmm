@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:Platform xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_r4sicNGIEeqHNZ6f6L9diA" name="myPlat">
+  <toolsAndInterfaces href="tiLib/myPlatTI.model#_I3_c8NGBEeqHNZ6f6L9diA"/>
+  <capabilitiesAndConcerns href="ccLib/myPlatCC.model#_Lbei0NGAEeqHNZ6f6L9diA"/>
+</platformmm:Platform>

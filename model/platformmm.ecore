@@ -2,15 +2,32 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="platformmm" nsURI="http://www.example.org/platformmm" nsPrefix="platformmm">
   <eClassifiers xsi:type="ecore:EClass" name="Platform">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilitiesAndConcerns"
-        eType="#//CapabilitiesAndConcerns"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="languages" upperBound="-1"
-        eType="#//Language"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
-        eType="#//Tool"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="public" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="FALSE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toolsAndInterfaces" lowerBound="1"
+        eType="#//ToolsAndInterfaces"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilitiesAndConcerns"
+        lowerBound="1" eType="#//CapabilitiesAndConcerns"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ToolsAndInterfaces">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
+        eType="#//Tool" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface" eSuperTypes="#//PlatformElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" upperBound="-1" eType="#//InterfaceType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
+        eType="#//Tool" eOpposite="#//Tool/interfaces"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tool" eSuperTypes="#//PlatformElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
+        eType="#//Interface" eOpposite="#//Interface/tools"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" ordered="false"
+        upperBound="-1" eType="#//Capability" eOpposite="#//Capability/tools"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devopsprofiles" upperBound="-1"
+        eType="#//DevOpsProfile" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mdeprofiles" upperBound="-1"
+        eType="#//MdeProfile" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CapabilitiesAndConcerns">
     <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" upperBound="-1"
@@ -18,27 +35,51 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="concerns" upperBound="-1"
         eType="#//Concern" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Capability">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" upperBound="-1"
-        eType="#//DevOpsPhase"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
-        eType="#//Status"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capability" eSuperTypes="#//PlatformElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="concerns" upperBound="-1"
         eType="#//Concern" eOpposite="#//Concern/capabilities"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tools" upperBound="-1"
+        eType="#//Tool" eOpposite="#//Tool/capabilities"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Concern">
+  <eClassifiers xsi:type="ecore:EClass" name="Concern" eSuperTypes="#//PlatformElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" eType="#//PPRAspect"
+        defaultValueLiteral="PROCESS"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" upperBound="-1"
+        eType="#//Capability" eOpposite="#//Capability/concerns"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PlatformElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ppr" eType="#//PprAspect"
-        defaultValueLiteral="PROCESS"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="devOpsPhases" upperBound="-1"
         eType="#//DevOpsPhase"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
-        eType="#//Status"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilities" upperBound="-1"
-        eType="#//Capability" eOpposite="#//Capability/concerns"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="#//Status"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DevOpsPhase">
+    <eLiterals name="CODE"/>
+    <eLiterals name="BUILD" value="1"/>
+    <eLiterals name="TEST" value="2"/>
+    <eLiterals name="RELEASE" value="3"/>
+    <eLiterals name="DEPLOY" value="4"/>
+    <eLiterals name="OPERATE" value="5"/>
+    <eLiterals name="MONITOR" value="6"/>
+    <eLiterals name="PLAN" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PPRAspect">
+    <eLiterals name="PROCESS"/>
+    <eLiterals name="PRODUCT" value="1"/>
+    <eLiterals name="RESOURCE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Status">
+    <eLiterals name="REQUIRED" literal="REQUIRED"/>
+    <eLiterals name="PROVIDED" value="1" literal="PROVIDED"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="InterfaceType">
+    <eLiterals name="GUI" literal="GUI"/>
+    <eLiterals name="API" value="1"/>
+    <eLiterals name="SCRIPT" value="2"/>
+    <eLiterals name="CLI" value="3"/>
+    <eLiterals name="SPEC" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BehaviorConcern" eSuperTypes="#//Concern">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" lowerBound="1" eType="#//BcKind"
@@ -70,19 +111,6 @@
         defaultValueLiteral="INTERNAL_DSL"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Tool">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pragmatics" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" upperBound="-1"
-        eType="#//DevOpsPhase"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
-        eType="#//Status"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="devopsprofiles" upperBound="-1"
-        eType="#//DevOpsProfile" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="mdeprofiles" upperBound="-1"
-        eType="#//MdeProfile" containment="true"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DevOpsProfile">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//DevOpsToolCategory"
         defaultValueLiteral="COLLABORATION"/>
@@ -92,16 +120,6 @@
         defaultValueLiteral="GRAPHICAL"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generation" eType="#//GenerationKind"
         defaultValueLiteral="MODEL_TO_TEXT"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DevOpsPhase">
-    <eLiterals name="CODE"/>
-    <eLiterals name="BUILD" value="1"/>
-    <eLiterals name="TEST" value="2"/>
-    <eLiterals name="RELEASE" value="3"/>
-    <eLiterals name="DEPLOY" value="4"/>
-    <eLiterals name="OPERATE" value="5"/>
-    <eLiterals name="MONITOR" value="6"/>
-    <eLiterals name="PLAN" value="7"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="AsKind">
     <eLiterals name="MOF"/>
@@ -131,11 +149,6 @@
     <eLiterals name="TEXT_TO_MODEL" value="1"/>
     <eLiterals name="MODEL_TO_MODEL" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="PprAspect">
-    <eLiterals name="PROCESS"/>
-    <eLiterals name="PRODUCT" value="1"/>
-    <eLiterals name="RESOURCE" value="2"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BcKind">
     <eLiterals name="FUNCTIONAL"/>
     <eLiterals name="NON_FUNCTIONAL" value="1" literal="NON_FUNCTIONAL"/>
@@ -164,9 +177,5 @@
     <eLiterals name="SOURCECONTROL_MANAGEMENT" value="14" literal="SOURCECONTROL_MANAGEMENT"/>
     <eLiterals name="TESTING" value="15"/>
     <eLiterals name="VALUES_STREAM_MANAGEMENT" value="16" literal="VALUES_STREAM_MANAGEMENT"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="Status">
-    <eLiterals name="REQUIRED" literal="REQUIRED"/>
-    <eLiterals name="PROVIDED" value="1" literal="PROVIDED"/>
   </eClassifiers>
 </ecore:EPackage>

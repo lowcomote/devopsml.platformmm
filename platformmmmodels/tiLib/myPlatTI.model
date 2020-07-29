@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platformmm:ToolsAndInterfaces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_I3_c8NGBEeqHNZ6f6L9diA">
+  <interfaces xmi:id="_h6_gANGEEeqHNZ6f6L9diA" name="GitCli" description="Git Command Line Interface" status="PROVIDED" tools="_LRGpYNGBEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <type>CLI</type>
+  </interfaces>
+  <interfaces xmi:id="_UeFZgNGFEeqHNZ6f6L9diA" name="GitGui" description="Git Graphical User Interface" status="PROVIDED" tools="_LRGpYNGBEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <type>GUI</type>
+  </interfaces>
+  <interfaces xmi:id="_yx4IINGFEeqHNZ6f6L9diA" name="JenkinsUI" description="Jenkins Web User Interface" status="PROVIDED" tools="_mPqhkNGBEeqHNZ6f6L9diA">
+    <devOpsPhases>BUILD</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <type>GUI</type>
+  </interfaces>
+  <interfaces xmi:id="_Sy9pkNGHEeqHNZ6f6L9diA" name="MavenCli" description="Build life cycle manager cli" status="PROVIDED" tools="_TZkzENGGEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>BUILD</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <type>CLI</type>
+  </interfaces>
+  <interfaces xmi:id="_wrv3MNGHEeqHNZ6f6L9diA" name="Pom" description="maven project object model" status="PROVIDED" tools="_TZkzENGGEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>BUILD</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <type>SPEC</type>
+  </interfaces>
+  <interfaces xmi:id="_aP44sNGIEeqHNZ6f6L9diA" name="NexusUI" description="Nexus Web User Interface" status="PROVIDED" tools="_I9EtENGIEeqHNZ6f6L9diA">
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <type>GUI</type>
+  </interfaces>
+  <tools xmi:id="_LRGpYNGBEeqHNZ6f6L9diA" name="Git" description="Source Code Maneger" status="PROVIDED" interfaces="_h6_gANGEEeqHNZ6f6L9diA _UeFZgNGFEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <capabilities href="../ccLib/myPlatCC.model#_N-PagNGAEeqHNZ6f6L9diA"/>
+  </tools>
+  <tools xmi:id="_mPqhkNGBEeqHNZ6f6L9diA" name="Jenkins" description="Jobs automation and control manager" status="PROVIDED" interfaces="_yx4IINGFEeqHNZ6f6L9diA">
+    <devOpsPhases>BUILD</devOpsPhases>
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+    <capabilities href="../ccLib/myPlatCC.model#_czE14NGCEeqHNZ6f6L9diA"/>
+  </tools>
+  <tools xmi:id="_TZkzENGGEeqHNZ6f6L9diA" name="Maven" description="Build lifecycle manager" status="PROVIDED" interfaces="_Sy9pkNGHEeqHNZ6f6L9diA _wrv3MNGHEeqHNZ6f6L9diA">
+    <devOpsPhases>CODE</devOpsPhases>
+    <devOpsPhases>BUILD</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+  </tools>
+  <tools xmi:id="_I9EtENGIEeqHNZ6f6L9diA" name="Nexus" description="Artifact Repository Manager" status="PROVIDED" interfaces="_aP44sNGIEeqHNZ6f6L9diA">
+    <devOpsPhases>DEPLOY</devOpsPhases>
+    <devOpsPhases>RELEASE</devOpsPhases>
+  </tools>
+</platformmm:ToolsAndInterfaces>
