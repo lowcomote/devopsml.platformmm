@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<platformmm:Language xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_kKm6EM3SEeqBuIcN73M34w" name="NexusCli" pragmatics="CLI used to interact with Nexus Repository Manager">
-  <phase>DEPLOY</phase>
-  <phase>RELEASE</phase>
-  <languagecharacteristics xmi:id="_rP5hwM3SEeqBuIcN73M34w" abstractSyntax="GRAMMAR" semantics="OPERATIONAL"/>
-</platformmm:Language>

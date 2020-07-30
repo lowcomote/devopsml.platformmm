@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<platformmm:Language xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:platformmm="http://www.example.org/platformmm" xmi:id="_4tzjQM3QEeqBuIcN73M34w" name="GitGui" pragmatics="Graphical environment for GIT">
-  <phase>DEPLOY</phase>
-  <phase>RELEASE</phase>
-  <languagecharacteristics xmi:id="_HAeXoM3REeqBuIcN73M34w" abstractSyntax="GRAMMAR" concreteSyntax="GRAPHICAL" semantics="OPERATIONAL" realization="EXTERNAL_DSL"/>
-</platformmm:Language>
