@@ -56,6 +56,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="#//Status"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DevOpsPhase">
+    <eLiterals name="MODEL" value="8"/>
+    <eLiterals name="GENERATE" value="9"/>
     <eLiterals name="CODE"/>
     <eLiterals name="BUILD" value="1"/>
     <eLiterals name="TEST" value="2"/>
